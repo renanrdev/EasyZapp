@@ -240,7 +240,7 @@ const TicketListItemCustom = ({ ticket, setUpdate }) => {
             badgeContent={`${ticketUser}`}
             //color="primary"
             style={{
-              backgroundColor: "#3498db",
+              backgroundColor: "#ffffff",
               height: 18,
               padding: 5,
               position: "inherit",
