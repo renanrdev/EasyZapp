@@ -290,7 +290,7 @@ const LoggedInLayout = ({ children }) => {
           <Typography
             component="h1"
             variant="h6"
-            color="red"
+            color="inherit"
             noWrap
             className={classes.title}
             style={console.log('dueDate', user?.company?.dueDate)}
