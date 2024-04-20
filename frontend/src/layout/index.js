@@ -30,7 +30,7 @@ import toastError from "../errors/toastError";
 import { useDate } from "../hooks/useDate";
 import AnnouncementsPopover from "../components/AnnouncementsPopover";
 
-import logo from "../assets/logo.png";
+import logo from "../assets/logo2.svg";
 import { socketConnection } from "../services/socket";
 import ChatPopover from "../pages/Chat/ChatPopover";
 import { system } from "../config.json";
