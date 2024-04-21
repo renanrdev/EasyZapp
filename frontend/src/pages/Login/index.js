@@ -26,8 +26,15 @@ import logo from "../../assets/logologin.png";
 import { systemVersion } from "../../../package.json";
 //import { system } from "../../config.json";
 
-
 const useStyles = makeStyles((theme) => ({
+  root: { // Default styles for the app
+    backgroundColor: "#5db85e",
+    padding: theme.spacing(2),
+  },
+  loginBackground: { // Styles for the login screen
+    backgroundColor: '#007bff', // Azul escuro (Replace with your desired color)
+    padding: theme.spacing(2),
+  },
   paper: {
     marginTop: theme.spacing(8),
     display: "flex",
@@ -38,8 +45,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     borderRadius: theme.spacing(2),
     //backgroundColor: `rgba(${theme.palette.background.paper}, 0.8)`,
-    //backgroundColor: theme.palette.background.paper,
-    backgroundColor: "#5db85e",
+    backgroundColor: theme.palette.background.paper,
     boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.16)",
 
   },
@@ -106,15 +112,18 @@ const Login = () => {
   };
 
   return (
-    //<div style={{ display: 'flex', 
-      //flexDirection: 'column', 
-      //minHeight: '100vh', 
-      // backgroundImage: `url(${loginBackground})`,
-      //backgroundSize: 'cover',
-      //backgroundRepeat: 'no-repeat',
-      //backgroundPosition: 'center'
-    //}}>
+    // <div style={{ display: 'flex', 
+    //   flexDirection: 'column', 
+    //   minHeight: '100vh', 
+    //   backgroundImage: `url(${loginBackground})`,
+    //   backgroundSize: 'cover',
+    //   backgroundRepeat: 'no-repeat',
+    //   backgroundPosition: 'center'
+    // }}>
     <div className={classes.root}>
+      <Container component="main" maxWidth="md" className={classes.loginBackground}>
+
+      
       <Container component="main" maxWidth="md">
         <CssBaseline />
         <div className={classes.containerWrapper}>
@@ -189,6 +198,7 @@ const Login = () => {
             </div>
           </Container>       
         </div>
+      </Container>
       </Container>
     </div>
   ); 
