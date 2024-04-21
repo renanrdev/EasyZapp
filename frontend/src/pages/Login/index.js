@@ -28,7 +28,7 @@ import { systemVersion } from "../../../package.json";
 
 const useStyles = makeStyles((theme) => ({
   root: { // Default styles for the app
-    backgroundColor: "#5db85e",
+    backgroundColor: "#007bff",
     padding: theme.spacing(2),
   },
   loginBackground: { // Styles for the login screen
