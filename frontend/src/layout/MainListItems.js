@@ -268,6 +268,12 @@ const MainListItems = (props) => {
         icon={<WhatsAppIcon />}
       />
 
+      <ListItemLink
+        to="/ZDGGroups"
+        primary={i18n.t("mainDrawer.listItems.ZDGGroups")}
+        icon={<GroupIcon />}
+      />
+
      <ListItemLink
         to="/todolist"
         primary={i18n.t("mainDrawer.listItems.todolist")}

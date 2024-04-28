@@ -14,6 +14,7 @@ import Switch from "@material-ui/core/Switch";
 
 import NewTicketModal from "../NewTicketModal";
 import TicketsList from "../TicketsList";
+import TicketsListGroup from "../TicketsListGroup"
 import TabPanel from "../TabPanel";
 
 import { i18n } from "../../translate/i18n";
@@ -143,6 +144,12 @@ const TicketsManager = () => {
 						classes={{ root: classes.tab }}
 					/>
 					<Tab
+						value={"group"}
+						icon={<GroupWorkIcon />}
+						label={"Grupo"}
+						classes={{ root: classes.tab }}
+					/>
+					<Tab
 						value={"closed"}
 						icon={<CheckBoxIcon />}
 						label={i18n.t("tickets.tabs.closed.title")}
@@ -210,6 +217,14 @@ const TicketsManager = () => {
 			<TabPanel value={tab} name="open" className={classes.ticketsWrapper}>
 				<TicketsList
 					status="open"
+					showAll={showAllTickets}
+					selectedQueueIds={selectedQueueIds}
+				/>
+				<TicketsList status="pending" selectedQueueIds={selectedQueueIds} />
+			</TabPanel>
+			<TabPanel value={tab} name="group" className={classes.ticketsWrapper}>
+				<TicketsList
+					status="group"
 					showAll={showAllTickets}
 					selectedQueueIds={selectedQueueIds}
 				/>

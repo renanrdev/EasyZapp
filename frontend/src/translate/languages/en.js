@@ -252,6 +252,7 @@ const messages = {
 					todolist: "to-Do List",
 					contacts: "Contacts",
 					queues: "Queues",
+					ZDGGroups: "Groups",
 					administration: "Administration",
 					users: "Users",
 					settings: "Settings",

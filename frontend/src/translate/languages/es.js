@@ -256,6 +256,7 @@ const messages = {
 					todolist: "Tareas",
 					contacts: "Contactos",
 					queues: "Linhas",
+					ZDGGroups: "Grupos",
 					administration: "Administración",
 					users: "Usuarios",
 					settings: "Configuración",

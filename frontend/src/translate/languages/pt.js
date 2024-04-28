@@ -346,6 +346,7 @@ const messages = {
           tags: "Tags",
           administration: "Administração",
           users: "Usuários",
+          ZDGGroups: "Grupos",
           settings: "Configurações",
           helps: "Ajuda",
           messagesAPI: "API",

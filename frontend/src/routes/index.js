@@ -19,6 +19,7 @@ import Helps from "../pages/Helps/";
 import ContactLists from "../pages/ContactLists/";
 import ContactListItems from "../pages/ContactListItems/";
 // import Companies from "../pages/Companies/";
+import ZDGGroups from "../pages/ZDGGroups/";
 import QuickMessages from "../pages/QuickMessages/";
 import { AuthProvider } from "../context/Auth/AuthContext";
 import { TicketsContextProvider } from "../context/Tickets/TicketsContext";
@@ -155,6 +156,7 @@ const Routes = () => {
                       component={CampaignsConfig}
                       isPrivate
                     />
+                    <Route exact path="/ZDGGroups" component={ZDGGroups} isPrivate />
 		    <Route exact path="/Kanban" component={Kanban} isPrivate />
                     <Route exact path="/TagsKanban" component={TagsKanban} isPrivate />
                   </>
