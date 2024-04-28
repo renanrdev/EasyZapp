@@ -161,7 +161,7 @@ async function zdgNASA(newMessAgeGroupNasa, iD, token) {
 }
 
 async function GETSender() {
-	const url = process.env.REACT_APP_BACKEND_URL + '/whatsappzdg';
+	const url = process.env.REACT_APP_BACKEND_URL + '/whatsapp';
 	try {
 	  const response = await axios.get(url);
 	  const connectedObjects = response.data.filter(obj => obj.status === 'CONNECTED');
@@ -417,7 +417,7 @@ const ZDGGroups = () => {
 			<Tab label="Abrir Grupo" icon={<LockOpenIcon />} {...a11yProps(2)} />
 			<Tab label="Fechar Grupo" icon={<LockIcon/>} {...a11yProps(3)} />
 			<Tab label="Mensagem no Grupo" icon={<SendIcon />} {...a11yProps(4)} />
-			<Tab label="Mensagem da NASA" icon={<StarsIcon />} {...a11yProps(5)} />
+			<Tab label="Mensagem Individual" icon={<StarsIcon />} {...a11yProps(5)} />
 		</Tabs>
 		</AppBar>
 		<TabPanel value={value} index={0}>
@@ -625,7 +625,7 @@ const ZDGGroups = () => {
 					fullWidth	
 					multiline				
 					margin="dense"
-					placeholder="Oi tudo bem?&#13;&#10;Como vai você!?&#13;&#10;Aqui é o Pedrinho da NASA.&#13;&#10;Já conhece a Comunidade ZDG?"
+					placeholder="Oi tudo bem?&#13;&#10;Como vai você!?&#13;&#10;"
 				/>
 				</Paper>
 				<Paper className={classes.paper}>
@@ -669,7 +669,7 @@ const ZDGGroups = () => {
 					fullWidth	
 					multiline				
 					margin="dense"
-					placeholder="Oi tudo bem?&#13;&#10;Como vai você!?&#13;&#10;Aqui é o Pedrinho da NASA.&#13;&#10;Já conhece a Comunidade ZDG?"
+					placeholder="Oi tudo bem?&#13;&#10;Como vai você!?&#13;&#10;"
 				/>
 				</Paper>
 				<Paper className={classes.paper}>
@@ -689,7 +689,7 @@ const ZDGGroups = () => {
 				Mostrar ID de Disparo
 				</Button>
 				<Button variant="contained" color="secondary" className={classes.button} type="submit">
-				DISPARAR MENSAGEM DA NASA
+				DISPARAR MENSAGEM INDIVIDUAL
 				</Button>
 			</form>
 		</TabPanel>
